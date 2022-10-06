@@ -22,9 +22,7 @@ function Volunteers() {
       const { id, name } = volunteerNames[i];
       arr.push(<Volunteer key={id} id={id} name={name} />);
     } else
-      arr.push(
-        <Volunteer key={i + 1} id={i + 1} name="Another Volunteer Needed" />
-      );
+      arr.push(<Volunteer key={i + 1} id={i + 1} name="Volunteer Needed" />);
   }
 
   return (
